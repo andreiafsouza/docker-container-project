@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="login-section">
+        <form action="/login" method="post">
+          <div class="login-container">
+            <img class="image-logo" src="./images/logo-regular.png" />
+            <div class="title-container">
+              <h1>
+                Entre em sua conta <span class="primary-color-text">Ada</span>
+              </h1>
+              <h2 class="secondary-color-text">
+                Continue com o nome de usuário que você utiliza pra entrar
+              </h2>
+            </div>
+            <div class="input-container">
+              <label class="input-label" htmlFor="username">Usuário</label>
+              <input
+                id="username-input"
+                class="input-default"
+                name="username"
+                type="text"
+                autocomplete="off"
+                placeholder="Digite seu usuário"
+              />
+            </div>
+            <div class="input-container">
+              <label class="input-label" htmlFor="password">Senha</label>
+              <input
+                id="password-input"
+                class="input-default"
+                name="password"
+                type="password"
+                autocomplete="off"
+                placeholder="Digite sua senha"
+              />
+              <button
+                id="password-icon-button"
+                class="icon-container"
+                title="trocar visibilidade da senha"
+                type="button"
+              >
+                <img
+                  id="password-icon-img"
+                  class="eye-icon"
+                  src="./icons/fa-eye-slash.svg"
+                  alt="icone olho"
+                />
+              </button>
+            </div>
+
+            <button type="submit" id="login-button" class="primary-button">
+              Entrar
+            </button>
+
+            <div class="text-divider"><p class="paragraph-divider">ou</p></div>
+
+            <a href="/register"
+              ><button type="button" id="subscribe-button" class="outlined-button">
+                Criar nova conta
+              </button></a
+            >
+          </div>
+        </form>
+      </section>
+      <section class="image-section"></section>
+    </main>
+
+    <script src="password.js"></script>
+  </body>
+</html>
